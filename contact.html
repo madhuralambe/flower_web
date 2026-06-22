@@ -1,0 +1,387 @@
+<html lang="en">
+    <head><title>index page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+
+        <style>
+            body{
+                font-family:Arial,sans-serif;
+                padding:10px;
+                background-color:white;
+            }
+            .container{
+                width:100%;
+                border:2px solid black;
+            }
+            .header{
+                background-image:url("h1.jpeg");
+                display:flex;
+                justify-content:space-between;
+                align-items:center;
+                padding:15px;
+                border-bottom:2px solid black;
+            }
+            .logo{
+                width:60px;
+                height:60px;
+                background-color:transparent;
+                text-align: center;
+                line-height: 60px;
+            }
+            .menu{
+                 width:600px;
+                height:55px;
+                background-color: blanchedalmond;
+                text-align: center;
+                line-height: 40px;
+
+            }
+            .menu li{
+                display:inline-block;
+                margin-left:20px;
+            }
+            .menu a{
+                text-decoration: none;
+                color:brown;
+                font-weight:bold;
+                font-size: 20px;
+            }
+            .menu a:hover{
+                color:orange;
+            }
+            .banner{
+                height:400px;
+                border-bottom:2px solid black;
+                
+                justify-content:center;
+                align-items: center;
+                font-size: 24px;
+            }
+            .banner img{
+                width:100%;
+            }
+            .content{
+                display:flex;
+                padding: 20px;
+                gap:20px;
+                border-bottom: 2px solid black;
+            }
+            .left{
+                width:30%;
+                
+            }
+            .box1,.box2{
+    border:2px solid pink;
+    border-radius:15px;
+    overflow:hidden;
+    background:#fff0f5;
+    text-align:center;
+    margin-bottom:20px;
+}
+
+.box1 img,
+.box2 img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    display:block;
+}
+
+.box1 h3,
+.box2 h3{
+    color:darkred;
+    margin:10px 0;
+}
+
+.box1 p,
+.box2 p{
+    padding:10px;
+    line-height:1.5;
+}
+
+.banner img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+            .small-box{
+                height:120px;
+                border:2px solid black;
+                margin-bottom: 20px;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+
+            }
+            .small-box img{
+                    width:100%;
+                    margin-top: 20px;
+            }
+             .small-box img{
+                    width:100%;
+                    margin-top: 20px;
+             }
+            .right{
+                width:70%;
+                border:2px solid black;
+                background-image: url("bg2.jpg");
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+                color:#acf4f4;
+            
+                justify-content: center;
+                align-items: center;
+                
+                text-align: center;
+            }
+            .main-content{
+    padding:25px;
+    width:90%;
+}
+
+.main-content h2,
+.main-content h3{
+    text-align:center;
+     background-image: url("bg2.jpg");
+     background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+
+}
+
+.main-content p{
+    text-align:center;
+    line-height:1.8;
+}
+.main-content{
+    padding:25px;
+    background-image:url("contactbg.jpg");
+    background-size:cover;
+    background-position:center;
+    color:black;
+    
+    background-blend-mode:overlay;
+}
+.main-content h2{
+    text-align:center;
+}
+
+.main-content h3{
+    text-align:left;
+}
+
+.main-content p{
+    text-align:left;
+}
+            .right h2{
+                font-size:32px;
+                margin:10px;
+                color:darkred;
+            }
+            .right p{
+                font-size:16px;
+                line-height: 1.6;
+                text-align: justify;
+            }
+            .right h2{
+                text-align: center;
+                font-size:32px;
+                color:darkred;
+
+            }
+
+            .footer-boxes{
+                display:flex;
+                justify-content: space-around;
+                padding: 20px;
+                border-bottom: 2px solid black;
+            }
+            .footer-box{
+                width:22%;
+                height:200px;
+                border:2px solid black;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                box-sizing:border-box;
+                background-color: #acf4f4;
+                
+            }
+            .footer-box h3{
+                color:black;
+                margin:0 0 10px 0;
+                font-size:15px;
+
+            }
+            .footer-box p{
+                color:brown;
+                margin:0;
+                line-height: 1.5;
+                font-size: 15px;
+            }
+        
+            
+            .copyright{
+                text-align: center;
+                padding:15px;
+            }
+            @media(max-width:768px)
+            {
+                .content{
+                    flex-direction: column;
+                }
+                .left,.right{
+                    width:100%;
+                }
+                .footer-boxes{
+                    flex-wrap:wrap;
+                    gap:15px;
+                }
+                .footer-box{
+                    width:48%;
+                }
+
+            }
+            @media(max-width:480px){
+                .header{
+                    flex-direction: column;
+                    gap:15px;
+
+                }
+                .menu{
+                    width:100%;
+
+                }
+                .footer-box{
+                    width:100%;
+                }
+                .banner{
+                    height:120px;
+                    font-size: 18px;
+                }
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <div class="logo"><img src="log.jpg" class="logo"></div>
+                <div class="menu">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="aboutUs.html">About Us</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="product.html">Product</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="banner">
+                <img src="cs.jpeg" class="banner">
+            </div>
+            <div class="content">
+
+    <div class="left">
+
+        <div class="box1">
+            <img src="b2.jpg">
+            <h3>Visit Our Shop</h3>
+            <p>
+                Come and explore our beautiful collection
+                of fresh flowers and bouquets.
+            </p>
+        </div>
+
+        <div class="box2">
+            <img src="b1.jpg">
+            <h3>Fast Delivery</h3>
+            <p>
+                We deliver fresh flowers quickly
+                to your doorstep.
+            </p>
+        </div>
+
+    </div>
+
+    <div class="right">
+
+        <div class="main-content">
+
+            <h2>🌸 Contact Us 🌸</h2>
+
+            <p>
+                We'd love to hear from you! Feel free to
+                contact us for flower orders, custom bouquets,
+                wedding decorations, and special events.
+            </p>
+
+            <h3>📍 Address</h3>
+            <p>
+                Flower Shop,<br>
+                Main Road, Ichalkaranji,<br>
+                Maharashtra, India.
+            </p>
+
+            <h3>📞 Phone</h3>
+            <p>
+                +91 98765 43210
+            </p>
+
+            <h3>📧 Email</h3>
+            <p>
+                flowershop@gmail.com
+            </p>
+
+            <h3>🕒 Working Hours</h3>
+            <p>
+                Monday - Sunday<br>
+                9:00 AM to 8:00 PM
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+            <div class="footer-boxes">
+                <div class="footer-box">
+                 <h3>Why Choose Us?</h3>
+                    
+                 <p>
+                      🌸 Fresh Flowers Daily<br>
+                      🚚 Fast Delivery<br>
+                      💝 Custom Bouquets
+                    
+                       </p>
+                 </div>
+            <div class="footer-box">"Every flower blooms in its own time." 🌷</div>
+
+                <div class="footer-box">
+                    <h3>Special Offers:-</h3>
+            
+                 <p>🌹 Rose Bouquet 20% Off
+                  🌻 Sunflower Collection
+                  💐 Wedding Flower Packages
+                  </p> 
+                </div>
+                <div class="footer-box">
+                    <h3>Customer Review :-</h3>
+                   <p>
+                          ⭐⭐⭐⭐⭐<br>
+                        "Beautiful flowers and excellent service!"
+                    </p>
+                </div>
+            </div>
+            <div class="copyright">
+                @ 2026 | Flower Shop Website |
+            </div>
+
+        </div>
+    </body>
+</html>
